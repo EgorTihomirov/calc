@@ -1,17 +1,106 @@
-button {
- width: 60px;
- height: 60px;
- margin: 5px;
- margin-top: 10px;
-}
-input {
-    width: 250px;
-    height: 30px;
-    margin-bottom: 30px;
-    font-style: normal;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-p {
-    border: 20px;
-    text-align: center;
+#dspl {
+    width: 260px;
+    padding: 14px;
+    font-size: 20px;
+    text-align: right;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#operator_btns, #number-btns {
+    display: inline-block;
+}
+
+#operator_btns button, #number-btns button {
+    width: 52px;
+    height: 42px;
+    font-size: 18px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: background-color 0.3s;
+}
+
+#operator_btns button:hover, #number-btns button:hover {
+    background-color: #ddd;
+}
+
+#operator_btns button:active, #number-btns button:active {
+    background-color: #ccc;
+}
+
+button {
+    user-select: none;
+}
+
+#result {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#operator_btns button {
+    background-color: #fcc;
+    color: #000;
+}
+
+#operator_btns button:hover {
+    background-color: #faebcc;
+}
+
+#operator_btns button:active {
+    background-color: #fab1a8;
+}
+
+#number-btns button {
+    background-color: #ebebeb;
+    color: #555;
+}
+
+#number-btns button:hover {
+    background-color: #dbdbdb;
+}
+
+#number-btns button:active {
+    background-color: #cacaca;
+}
+
+#number-btns button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+#number-btns button:disabled:hover {
+    background-color: #ddd;
+}
+
+#number-btns button:disabled:active {
+    background-color: #ddd;
+}
+
+#number-btns button:not(:disabled):focus {
+    box-shadow: 0 0 0 2px #5bc0de;
 }
