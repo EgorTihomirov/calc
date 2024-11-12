@@ -16,6 +16,7 @@
                 <button id="clear" onclick="clearCalc()">C</button>
                 <button id="backspace" onclick="backspace()">←</button>
                 <button id="plus" onclick="addOperator('+')">+</button>
+                <br>
                 <button id="minus" onclick="addOperator('-')">-</button>
                 <button id="times" onclick="addOperator('*')">×</button>
                 <button id="divide" onclick="addOperator('/')">÷</button>
@@ -35,11 +36,10 @@
                 <br>
                 <button id="zero" onclick="addNumber('0')">0</button>
                 <button id="dot" onclick="addNumber('.')">.</button>
+                <div id="action-buttons">
+                    <button id="equals" onclick="calculate()">=</button>
+                </div>
             </div>
-        </div>
-        <div id="action-buttons">
-            <button id="equals" onclick="calculate()">=</button>
-            <button id="reset" onclick="resetCalc()">Сброс</button>
         </div>
     </div>
 </body>
